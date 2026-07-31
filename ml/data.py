@@ -71,7 +71,5 @@ def process_data(
 
 def apply_label(inference):
     """ Convert the binary label in a single inference sample into string output."""
-    if inference[0] == 1:
-        return ">50K"
-    elif inference[0] == 0:
-        return "<=50K"
+    labels = [">50K" if p == 1 else "<=50K" for p in inference]
+    return labels
