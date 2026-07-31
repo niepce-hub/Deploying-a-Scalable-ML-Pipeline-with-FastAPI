@@ -17,7 +17,7 @@ def test_process_data_shapes():
         "sex": ["Male"],
         "native-country": ["United-States"],
         "age": [37],
-        "jnlgt": [178356],
+        "fnlgt": [178356],
         "education-num": [10],
         "capital-gain": [0],
         "capital-loss": [0],
